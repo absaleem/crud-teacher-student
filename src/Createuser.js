@@ -119,6 +119,7 @@ const handleSubmit= async (e)=>{
       </Form.Group>
 
       <Form.Group className="col-md-6"  controlId="exampleForm.ControlInput4" name="gender">
+      <Form.Label>Gender</Form.Label>
         <Form.Check
           value="male"
           type="radio"
@@ -153,6 +154,7 @@ const handleSubmit= async (e)=>{
         <Form.Control type="text" placeholder="education" name="education" value={formData.education} onChange={(e) => handleChange(e)}  required /> <span style={{color:"red"}}> {formData.error.education}</span><br/>
       </Form.Group><br/>
 
+      <Form.Label>Address</Form.Label>
       <FloatingLabel controlId="floatingTextarea2" label="Address">
         <Form.Control
           as="textarea"
