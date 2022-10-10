@@ -104,17 +104,17 @@ const handleSubmit= async (e)=>{
     {!loading && (
       <Form  onSubmit={(e)=>handleSubmit(e)}>
         <Form.Group className="col-md-6"  controlId="exampleForm.ControlInput1">
-            <Form.Label>User name</Form.Label>
+            <Form.Label>Teacher name</Form.Label>
             <Form.Control  type="text" placeholder="name"  name="name" value={formData.name}  onChange={(e) => handleChange(e)}  required /> <span style={{color:"red"}}> {formData.error.name}</span><br/>
         </Form.Group>
 
       <Form.Group className="col-md-6"   controlId="exampleForm.ControlInput2">
-        <Form.Label>User email</Form.Label>
+        <Form.Label>Teacher email</Form.Label>
         <Form.Control  type="text"  placeholder="email" name="email" value={formData.email}  onChange={(e) => handleChange(e)}  required /> <span style={{color:"red"}}> {formData.error.email}</span><br/>
       </Form.Group>
 
       <Form.Group className="col-md-6"  controlId="exampleForm.ControlInput3">
-        <Form.Label>User age</Form.Label>
+        <Form.Label>Teacher age</Form.Label>
         <Form.Control type="text" placeholder="age" name="age" value={formData.age} onChange={(e) => handleChange(e)}  required /> <span style={{color:"red"}}> {formData.error.age}</span><br/>
       </Form.Group>
 
